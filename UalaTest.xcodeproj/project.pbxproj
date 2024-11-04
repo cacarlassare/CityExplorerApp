@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B226FB9E2CD1E11100A33E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FB922CD1E11100A33E4B /* AppDelegate.swift */; };
+		B226FB9F2CD1E11100A33E4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FB992CD1E11100A33E4B /* SceneDelegate.swift */; };
+		B226FBA02CD1E11100A33E4B /* UalaTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B226FB9A2CD1E11100A33E4B /* UalaTest.xcdatamodeld */; };
+		B226FBA22CD1E11100A33E4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B226FB932CD1E11100A33E4B /* Assets.xcassets */; };
+		B226FBA42CD1E11100A33E4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B226FB962CD1E11100A33E4B /* LaunchScreen.storyboard */; };
+		B226FBAE2CD1E4AE00A33E4B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FBAC2CD1E4AE00A33E4B /* RootViewController.swift */; };
+		B226FBB12CD1E4D200A33E4B /* CitySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FBB02CD1E4CA00A33E4B /* CitySelectionViewController.swift */; };
+		B226FBB42CD1E56B00A33E4B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FBB32CD1E56400A33E4B /* MapViewController.swift */; };
+		B226FBB92CD203F100A33E4B /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FBB82CD203EF00A33E4B /* City.swift */; };
+		B226FBBB2CD20B8F00A33E4B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FBBA2CD20B8A00A33E4B /* CoreDataManager.swift */; };
+		B226FBBE2CD20BF500A33E4B /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FBBD2CD20BE600A33E4B /* CityViewModel.swift */; };
+		B226FBC22CD20DAA00A33E4B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FBC12CD20DA200A33E4B /* NetworkService.swift */; };
+		B226FBC62CD20E1B00A33E4B /* CityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FBC52CD20E1700A33E4B /* CityResponse.swift */; };
+		B226FBCB2CD33E9A00A33E4B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FBCA2CD33E9600A33E4B /* LoadingView.swift */; };
+		B226FBCE2CD343A700A33E4B /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FBCD2CD3439D00A33E4B /* CityTableViewCell.swift */; };
+		B226FBD12CD344F800A33E4B /* CityInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FBD02CD344EF00A33E4B /* CityInfoViewController.swift */; };
+		B226FBDC2CD741E300A33E4B /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FBDB2CD741DF00A33E4B /* ErrorHandler.swift */; };
+		B226FBE02CD74B4600A33E4B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FBDF2CD74B3C00A33E4B /* NetworkError.swift */; };
+		B226FBE22CD74B6200A33E4B /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226FBE12CD74B5E00A33E4B /* CoreDataError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B226FB712CD1DF2400A33E4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B226FB4F2CD1DF2100A33E4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B226FB562CD1DF2100A33E4B;
+			remoteInfo = UalaTest;
+		};
+		B226FB7B2CD1DF2500A33E4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B226FB4F2CD1DF2100A33E4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B226FB562CD1DF2100A33E4B;
+			remoteInfo = UalaTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B226FB572CD1DF2100A33E4B /* UalaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UalaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B226FB702CD1DF2400A33E4B /* UalaTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UalaTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B226FB7A2CD1DF2500A33E4B /* UalaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UalaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B226FB922CD1E11100A33E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B226FB932CD1E11100A33E4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B226FB942CD1E11100A33E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B226FB952CD1E11100A33E4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B226FB992CD1E11100A33E4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B226FB9D2CD1E11100A33E4B /* UalaTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UalaTest.xcdatamodel; sourceTree = "<group>"; };
+		B226FBAC2CD1E4AE00A33E4B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		B226FBB02CD1E4CA00A33E4B /* CitySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionViewController.swift; sourceTree = "<group>"; };
+		B226FBB32CD1E56400A33E4B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B226FBB82CD203EF00A33E4B /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		B226FBBA2CD20B8A00A33E4B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		B226FBBD2CD20BE600A33E4B /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		B226FBC12CD20DA200A33E4B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B226FBC52CD20E1700A33E4B /* CityResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityResponse.swift; sourceTree = "<group>"; };
+		B226FBCA2CD33E9600A33E4B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B226FBCD2CD3439D00A33E4B /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		B226FBD02CD344EF00A33E4B /* CityInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInfoViewController.swift; sourceTree = "<group>"; };
+		B226FBDB2CD741DF00A33E4B /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		B226FBDF2CD74B3C00A33E4B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		B226FBE12CD74B5E00A33E4B /* CoreDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B226FB732CD1DF2400A33E4B /* UalaTestTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UalaTestTests;
+			sourceTree = "<group>";
+		};
+		B226FB7D2CD1DF2500A33E4B /* UalaTestUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UalaTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B226FB542CD1DF2100A33E4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B226FB6D2CD1DF2400A33E4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B226FB772CD1DF2500A33E4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B226FB4E2CD1DF2100A33E4B = {
+			isa = PBXGroup;
+			children = (
+				B226FB9C2CD1E11100A33E4B /* UalaTest */,
+				B226FB732CD1DF2400A33E4B /* UalaTestTests */,
+				B226FB7D2CD1DF2500A33E4B /* UalaTestUITests */,
+				B226FB582CD1DF2100A33E4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B226FB582CD1DF2100A33E4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B226FB572CD1DF2100A33E4B /* UalaTest.app */,
+				B226FB702CD1DF2400A33E4B /* UalaTestTests.xctest */,
+				B226FB7A2CD1DF2500A33E4B /* UalaTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B226FB9C2CD1E11100A33E4B /* UalaTest */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBA62CD1E12D00A33E4B /* Supporting Files */,
+				B226FBBF2CD20D8600A33E4B /* Utilities */,
+				B226FBA72CD1E16B00A33E4B /* DB */,
+				B226FBB62CD203D900A33E4B /* Models */,
+				B226FBBC2CD20BBB00A33E4B /* View Models */,
+				B226FBAD2CD1E4AE00A33E4B /* View Controllers */,
+			);
+			path = UalaTest;
+			sourceTree = "<group>";
+		};
+		B226FBA62CD1E12D00A33E4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B226FB922CD1E11100A33E4B /* AppDelegate.swift */,
+				B226FB992CD1E11100A33E4B /* SceneDelegate.swift */,
+				B226FB932CD1E11100A33E4B /* Assets.xcassets */,
+				B226FB942CD1E11100A33E4B /* Info.plist */,
+				B226FB962CD1E11100A33E4B /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B226FBA72CD1E16B00A33E4B /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBBA2CD20B8A00A33E4B /* CoreDataManager.swift */,
+				B226FBE12CD74B5E00A33E4B /* CoreDataError.swift */,
+				B226FB9A2CD1E11100A33E4B /* UalaTest.xcdatamodeld */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		B226FBAD2CD1E4AE00A33E4B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBAC2CD1E4AE00A33E4B /* RootViewController.swift */,
+				B226FBAF2CD1E4B500A33E4B /* City Selection */,
+				B226FBCF2CD344DA00A33E4B /* City Info */,
+				B226FBB22CD1E54500A33E4B /* Map View */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B226FBAF2CD1E4B500A33E4B /* City Selection */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBB02CD1E4CA00A33E4B /* CitySelectionViewController.swift */,
+				B226FBCC2CD3439500A33E4B /* Cells */,
+			);
+			path = "City Selection";
+			sourceTree = "<group>";
+		};
+		B226FBB22CD1E54500A33E4B /* Map View */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBB32CD1E56400A33E4B /* MapViewController.swift */,
+			);
+			path = "Map View";
+			sourceTree = "<group>";
+		};
+		B226FBB62CD203D900A33E4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBC32CD20DE200A33E4B /* Networking */,
+				B226FBB72CD203E600A33E4B /* Cities */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B226FBB72CD203E600A33E4B /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBB82CD203EF00A33E4B /* City.swift */,
+			);
+			path = Cities;
+			sourceTree = "<group>";
+		};
+		B226FBBC2CD20BBB00A33E4B /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBBD2CD20BE600A33E4B /* CityViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B226FBBF2CD20D8600A33E4B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBDA2CD741D600A33E4B /* Error Handler */,
+				B226FBC92CD33E8B00A33E4B /* Loading View */,
+				B226FBC02CD20D9600A33E4B /* Networking */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B226FBC02CD20D9600A33E4B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBDF2CD74B3C00A33E4B /* NetworkError.swift */,
+				B226FBC12CD20DA200A33E4B /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B226FBC32CD20DE200A33E4B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBC42CD20E0B00A33E4B /* Cities */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B226FBC42CD20E0B00A33E4B /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBC52CD20E1700A33E4B /* CityResponse.swift */,
+			);
+			path = Cities;
+			sourceTree = "<group>";
+		};
+		B226FBC92CD33E8B00A33E4B /* Loading View */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBCA2CD33E9600A33E4B /* LoadingView.swift */,
+			);
+			path = "Loading View";
+			sourceTree = "<group>";
+		};
+		B226FBCC2CD3439500A33E4B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBCD2CD3439D00A33E4B /* CityTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B226FBCF2CD344DA00A33E4B /* City Info */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBD02CD344EF00A33E4B /* CityInfoViewController.swift */,
+			);
+			path = "City Info";
+			sourceTree = "<group>";
+		};
+		B226FBDA2CD741D600A33E4B /* Error Handler */ = {
+			isa = PBXGroup;
+			children = (
+				B226FBDB2CD741DF00A33E4B /* ErrorHandler.swift */,
+			);
+			path = "Error Handler";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B226FB562CD1DF2100A33E4B /* UalaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B226FB832CD1DF2500A33E4B /* Build configuration list for PBXNativeTarget "UalaTest" */;
+			buildPhases = (
+				B226FB532CD1DF2100A33E4B /* Sources */,
+				B226FB542CD1DF2100A33E4B /* Frameworks */,
+				B226FB552CD1DF2100A33E4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UalaTest;
+			packageProductDependencies = (
+			);
+			productName = UalaTest;
+			productReference = B226FB572CD1DF2100A33E4B /* UalaTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B226FB6F2CD1DF2400A33E4B /* UalaTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B226FB882CD1DF2500A33E4B /* Build configuration list for PBXNativeTarget "UalaTestTests" */;
+			buildPhases = (
+				B226FB6C2CD1DF2400A33E4B /* Sources */,
+				B226FB6D2CD1DF2400A33E4B /* Frameworks */,
+				B226FB6E2CD1DF2400A33E4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B226FB722CD1DF2400A33E4B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B226FB732CD1DF2400A33E4B /* UalaTestTests */,
+			);
+			name = UalaTestTests;
+			packageProductDependencies = (
+			);
+			productName = UalaTestTests;
+			productReference = B226FB702CD1DF2400A33E4B /* UalaTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B226FB792CD1DF2500A33E4B /* UalaTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B226FB8B2CD1DF2500A33E4B /* Build configuration list for PBXNativeTarget "UalaTestUITests" */;
+			buildPhases = (
+				B226FB762CD1DF2500A33E4B /* Sources */,
+				B226FB772CD1DF2500A33E4B /* Frameworks */,
+				B226FB782CD1DF2500A33E4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B226FB7C2CD1DF2500A33E4B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B226FB7D2CD1DF2500A33E4B /* UalaTestUITests */,
+			);
+			name = UalaTestUITests;
+			packageProductDependencies = (
+			);
+			productName = UalaTestUITests;
+			productReference = B226FB7A2CD1DF2500A33E4B /* UalaTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B226FB4F2CD1DF2100A33E4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					B226FB562CD1DF2100A33E4B = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					B226FB6F2CD1DF2400A33E4B = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = B226FB562CD1DF2100A33E4B;
+					};
+					B226FB792CD1DF2500A33E4B = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = B226FB562CD1DF2100A33E4B;
+					};
+				};
+			};
+			buildConfigurationList = B226FB522CD1DF2100A33E4B /* Build configuration list for PBXProject "UalaTest" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B226FB4E2CD1DF2100A33E4B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B226FB582CD1DF2100A33E4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B226FB562CD1DF2100A33E4B /* UalaTest */,
+				B226FB6F2CD1DF2400A33E4B /* UalaTestTests */,
+				B226FB792CD1DF2500A33E4B /* UalaTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B226FB552CD1DF2100A33E4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B226FBA22CD1E11100A33E4B /* Assets.xcassets in Resources */,
+				B226FBA42CD1E11100A33E4B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B226FB6E2CD1DF2400A33E4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B226FB782CD1DF2500A33E4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B226FB532CD1DF2100A33E4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B226FBC22CD20DAA00A33E4B /* NetworkService.swift in Sources */,
+				B226FBC62CD20E1B00A33E4B /* CityResponse.swift in Sources */,
+				B226FBAE2CD1E4AE00A33E4B /* RootViewController.swift in Sources */,
+				B226FBBE2CD20BF500A33E4B /* CityViewModel.swift in Sources */,
+				B226FB9E2CD1E11100A33E4B /* AppDelegate.swift in Sources */,
+				B226FBDC2CD741E300A33E4B /* ErrorHandler.swift in Sources */,
+				B226FB9F2CD1E11100A33E4B /* SceneDelegate.swift in Sources */,
+				B226FBA02CD1E11100A33E4B /* UalaTest.xcdatamodeld in Sources */,
+				B226FBB12CD1E4D200A33E4B /* CitySelectionViewController.swift in Sources */,
+				B226FBCE2CD343A700A33E4B /* CityTableViewCell.swift in Sources */,
+				B226FBBB2CD20B8F00A33E4B /* CoreDataManager.swift in Sources */,
+				B226FBD12CD344F800A33E4B /* CityInfoViewController.swift in Sources */,
+				B226FBE22CD74B6200A33E4B /* CoreDataError.swift in Sources */,
+				B226FBB92CD203F100A33E4B /* City.swift in Sources */,
+				B226FBE02CD74B4600A33E4B /* NetworkError.swift in Sources */,
+				B226FBCB2CD33E9A00A33E4B /* LoadingView.swift in Sources */,
+				B226FBB42CD1E56B00A33E4B /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B226FB6C2CD1DF2400A33E4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B226FB762CD1DF2500A33E4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B226FB722CD1DF2400A33E4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B226FB562CD1DF2100A33E4B /* UalaTest */;
+			targetProxy = B226FB712CD1DF2400A33E4B /* PBXContainerItemProxy */;
+		};
+		B226FB7C2CD1DF2500A33E4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B226FB562CD1DF2100A33E4B /* UalaTest */;
+			targetProxy = B226FB7B2CD1DF2500A33E4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B226FB962CD1E11100A33E4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B226FB952CD1E11100A33E4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B226FB842CD1DF2500A33E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UalaTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "City Explorer";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ar.com.carlassare.UalaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B226FB852CD1DF2500A33E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UalaTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "City Explorer";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ar.com.carlassare.UalaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B226FB862CD1DF2500A33E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "City Explorer";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B226FB872CD1DF2500A33E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "City Explorer";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B226FB892CD1DF2500A33E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ar.com.carlassare.UalaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UalaTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UalaTest";
+			};
+			name = Debug;
+		};
+		B226FB8A2CD1DF2500A33E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ar.com.carlassare.UalaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UalaTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UalaTest";
+			};
+			name = Release;
+		};
+		B226FB8C2CD1DF2500A33E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ar.com.carlassare.UalaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UalaTest;
+			};
+			name = Debug;
+		};
+		B226FB8D2CD1DF2500A33E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ar.com.carlassare.UalaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UalaTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B226FB522CD1DF2100A33E4B /* Build configuration list for PBXProject "UalaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B226FB862CD1DF2500A33E4B /* Debug */,
+				B226FB872CD1DF2500A33E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B226FB832CD1DF2500A33E4B /* Build configuration list for PBXNativeTarget "UalaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B226FB842CD1DF2500A33E4B /* Debug */,
+				B226FB852CD1DF2500A33E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B226FB882CD1DF2500A33E4B /* Build configuration list for PBXNativeTarget "UalaTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B226FB892CD1DF2500A33E4B /* Debug */,
+				B226FB8A2CD1DF2500A33E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B226FB8B2CD1DF2500A33E4B /* Build configuration list for PBXNativeTarget "UalaTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B226FB8C2CD1DF2500A33E4B /* Debug */,
+				B226FB8D2CD1DF2500A33E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B226FB9A2CD1E11100A33E4B /* UalaTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B226FB9D2CD1E11100A33E4B /* UalaTest.xcdatamodel */,
+			);
+			currentVersion = B226FB9D2CD1E11100A33E4B /* UalaTest.xcdatamodel */;
+			path = UalaTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B226FB4F2CD1DF2100A33E4B /* Project object */;
+}
