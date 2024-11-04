@@ -1,4 +1,4 @@
-##Note: As mentioned in the first interview, due to lack of enough experience working with SwiftUI, I used UIKit for the visuals.
+## Note: As mentioned in the first interview, due to lack of enough experience working with SwiftUI, I used UIKit for the visuals.
 
 
 # City Explorer App
